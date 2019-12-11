@@ -18,6 +18,9 @@ class ViewController: UIViewController {
     }
 
     
+    @IBAction func playLocalVideo(_ sender: Any) {
+        
+    }
     
 
 }
