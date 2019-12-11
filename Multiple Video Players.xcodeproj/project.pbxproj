@@ -13,6 +13,7 @@
 		AC96871D23A0B755007CBFFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC96871B23A0B755007CBFFA /* Main.storyboard */; };
 		AC96871F23A0B757007CBFFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC96871E23A0B757007CBFFA /* Assets.xcassets */; };
 		AC96872223A0B757007CBFFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC96872023A0B757007CBFFA /* LaunchScreen.storyboard */; };
+		AC96872A23A0BA49007CBFFA /* SampleVideo_1280_10MG.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AC96872923A0BA49007CBFFA /* SampleVideo_1280_10MG.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AC96871E23A0B757007CBFFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC96872123A0B757007CBFFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC96872323A0B757007CBFFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC96872923A0BA49007CBFFA /* SampleVideo_1280_10MG.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SampleVideo_1280_10MG.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				AC96871E23A0B757007CBFFA /* Assets.xcassets */,
 				AC96872023A0B757007CBFFA /* LaunchScreen.storyboard */,
 				AC96872323A0B757007CBFFA /* Info.plist */,
+				AC96872923A0BA49007CBFFA /* SampleVideo_1280_10MG.mp4 */,
 			);
 			path = "Multiple Video Players";
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 				AC96872223A0B757007CBFFA /* LaunchScreen.storyboard in Resources */,
 				AC96871F23A0B757007CBFFA /* Assets.xcassets in Resources */,
 				AC96871D23A0B755007CBFFA /* Main.storyboard in Resources */,
+				AC96872A23A0BA49007CBFFA /* SampleVideo_1280_10MG.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
