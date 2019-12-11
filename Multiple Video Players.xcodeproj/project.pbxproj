@@ -14,6 +14,8 @@
 		AC96871F23A0B757007CBFFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC96871E23A0B757007CBFFA /* Assets.xcassets */; };
 		AC96872223A0B757007CBFFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC96872023A0B757007CBFFA /* LaunchScreen.storyboard */; };
 		AC96872A23A0BA49007CBFFA /* SampleVideo_1280_10MG.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AC96872923A0BA49007CBFFA /* SampleVideo_1280_10MG.mp4 */; };
+		AC96872D23A0BA92007CBFFA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC96872C23A0BA92007CBFFA /* AVFoundation.framework */; };
+		AC96872F23A0BA96007CBFFA /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC96872E23A0BA96007CBFFA /* AVKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		AC96872123A0B757007CBFFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC96872323A0B757007CBFFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC96872923A0BA49007CBFFA /* SampleVideo_1280_10MG.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SampleVideo_1280_10MG.mp4; sourceTree = "<group>"; };
+		AC96872C23A0BA92007CBFFA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AC96872E23A0BA96007CBFFA /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC96872F23A0BA96007CBFFA /* AVKit.framework in Frameworks */,
+				AC96872D23A0BA92007CBFFA /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,7 @@
 			children = (
 				AC96871423A0B755007CBFFA /* Multiple Video Players */,
 				AC96871323A0B755007CBFFA /* Products */,
+				AC96872B23A0BA92007CBFFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +75,15 @@
 				AC96872923A0BA49007CBFFA /* SampleVideo_1280_10MG.mp4 */,
 			);
 			path = "Multiple Video Players";
+			sourceTree = "<group>";
+		};
+		AC96872B23A0BA92007CBFFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC96872E23A0BA96007CBFFA /* AVKit.framework */,
+				AC96872C23A0BA92007CBFFA /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
