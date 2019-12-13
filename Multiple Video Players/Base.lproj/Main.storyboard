@@ -21,10 +21,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSk-oP-jbz">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSk-oP-jbz">
                                 <rect key="frame" x="16" y="68" width="343" height="127"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="127" id="VcA-9h-ejM"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
                                 <state key="normal" title="Play Local Video">
                                     <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -33,12 +35,33 @@
                                     <action selector="playLocalVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="khO-ON-qbE"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXu-y5-HOj">
+                                <rect key="frame" x="16" y="221" width="343" height="127"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="127" id="Sjf-NH-FCW"/>
+                                    <constraint firstAttribute="height" constant="127" id="yrF-9r-PfF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
+                                <state key="normal" title="Play Streaming Video">
+                                    <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playLocalVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pDR-sZ-sdr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="JXu-y5-HOj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="AUn-Bj-SuC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JXu-y5-HOj" secondAttribute="trailing" constant="16" id="Gdj-Cm-SjC"/>
+                            <constraint firstItem="aSk-oP-jbz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Pde-kt-Gqo"/>
                             <constraint firstItem="3dB-35-7Gp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="WQp-eI-L4W"/>
                             <constraint firstItem="3dB-35-7Gp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fqx-Cz-MfI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3dB-35-7Gp" secondAttribute="trailing" constant="16" id="fyN-JP-Wv3"/>
+                            <constraint firstItem="JXu-y5-HOj" firstAttribute="top" secondItem="aSk-oP-jbz" secondAttribute="bottom" constant="26" id="n7z-oa-KN1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aSk-oP-jbz" secondAttribute="trailing" constant="16" id="wXV-GC-MWq"/>
+                            <constraint firstItem="aSk-oP-jbz" firstAttribute="top" secondItem="3dB-35-7Gp" secondAttribute="bottom" constant="13.5" id="zxg-jK-vSh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
