@@ -12,6 +12,9 @@ import AVKit
 
 class ViewController: UIViewController {
     
+    
+    
+    
     // Local Player Demo
     var localPlayerController = AVPlayerViewController()
     var localPlayer: AVPlayer?
@@ -34,6 +37,12 @@ class ViewController: UIViewController {
             
             self.localPlayerController.player?.play()
         })
+    }
+    
+    // Streaming Player Demo
+    @IBAction func playStreamingVideo(_ sender: Any) {
+        
+        
     }
     
 
