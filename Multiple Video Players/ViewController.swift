@@ -12,12 +12,14 @@ import AVKit
 
 class ViewController: UIViewController {
     
-    
-    
-    
     // Local Player Demo
     var localPlayerController = AVPlayerViewController()
     var localPlayer: AVPlayer?
+    
+    // Streaming Player Demo
+    var streamingPlayerController = AVPlayerViewController()
+    var streamingPlayer: AVPlayer?
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +29,12 @@ class ViewController: UIViewController {
         
         localPlayer = AVPlayer(url: URL(fileURLWithPath: localVideoName!))
         localPlayerController.player = localPlayer
+        
+        // Streaming Player Demo
+        let streamingVideoURL: NSURL? = NSURL(string: "https://file-examples.com/wp-content/uploads/2017/04/file_example_MP4_1280_10MG.mp4")
+        
+        streamingPlayer = AVPlayer(url: streamingVideoURL! as URL)
+        streamingPlayerController.player = streamingPlayer
         
     }
 
@@ -42,7 +50,11 @@ class ViewController: UIViewController {
     // Streaming Player Demo
     @IBAction func playStreamingVideo(_ sender: Any) {
         
-        
+        self.present(self.streamingPlayerController, animated: true, completion: {
+            
+            self.streamingPlayerController.player?.play()
+            
+        })
     }
     
 
