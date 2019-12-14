@@ -20,6 +20,9 @@ class ViewController: UIViewController {
     var streamingPlayerController = AVPlayerViewController()
     var streamingPlayer: AVPlayer?
     
+    // YouTube Player Demo
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

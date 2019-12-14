@@ -36,7 +36,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXu-y5-HOj">
-                                <rect key="frame" x="16" y="221" width="343" height="127"/>
+                                <rect key="frame" x="16" y="214" width="343" height="127"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="127" id="Sjf-NH-FCW"/>
@@ -51,17 +51,38 @@
                                     <action selector="playStreamingVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tFC-iA-ZJi"/>
                                 </connections>
                             </button>
+                            <wkWebView contentMode="scaleAspectFit" customUserAgent="" translatesAutoresizingMaskIntoConstraints="NO" id="Hum-ou-VwG">
+                                <rect key="frame" x="16" y="362" width="343" height="253"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration" applicationNameForUserAgent="">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click Red Box for YouTube" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bEO-H2-cke">
+                                <rect key="frame" x="16" y="623" width="343" height="24"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Hum-ou-VwG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="1ZU-zz-f83"/>
                             <constraint firstItem="JXu-y5-HOj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="AUn-Bj-SuC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JXu-y5-HOj" secondAttribute="trailing" constant="16" id="Gdj-Cm-SjC"/>
+                            <constraint firstItem="bEO-H2-cke" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ibh-m6-1Go"/>
                             <constraint firstItem="aSk-oP-jbz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Pde-kt-Gqo"/>
+                            <constraint firstItem="Hum-ou-VwG" firstAttribute="top" secondItem="JXu-y5-HOj" secondAttribute="bottom" constant="21" id="QYx-ST-3y1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hum-ou-VwG" secondAttribute="trailing" constant="16" id="UKD-EA-uAb"/>
                             <constraint firstItem="3dB-35-7Gp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="WQp-eI-L4W"/>
                             <constraint firstItem="3dB-35-7Gp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fqx-Cz-MfI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3dB-35-7Gp" secondAttribute="trailing" constant="16" id="fyN-JP-Wv3"/>
-                            <constraint firstItem="JXu-y5-HOj" firstAttribute="top" secondItem="aSk-oP-jbz" secondAttribute="bottom" constant="26" id="n7z-oa-KN1"/>
+                            <constraint firstItem="JXu-y5-HOj" firstAttribute="top" secondItem="aSk-oP-jbz" secondAttribute="bottom" constant="19" id="n7z-oa-KN1"/>
+                            <constraint firstItem="bEO-H2-cke" firstAttribute="top" secondItem="Hum-ou-VwG" secondAttribute="bottom" constant="8" id="p9J-JV-Eqk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bEO-H2-cke" secondAttribute="trailing" constant="16" id="rJP-Fq-g8e"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aSk-oP-jbz" secondAttribute="trailing" constant="16" id="wXV-GC-MWq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bEO-H2-cke" secondAttribute="bottom" constant="20" id="x73-ES-jf2"/>
                             <constraint firstItem="aSk-oP-jbz" firstAttribute="top" secondItem="3dB-35-7Gp" secondAttribute="bottom" constant="13.5" id="zxg-jK-vSh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
