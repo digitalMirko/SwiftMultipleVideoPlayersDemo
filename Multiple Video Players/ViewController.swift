@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 import AVKit
+import WebKit
 
 class ViewController: UIViewController {
     
@@ -21,6 +22,7 @@ class ViewController: UIViewController {
     var streamingPlayer: AVPlayer?
     
     // YouTube Player Demo
+    @IBOutlet weak var youTubeWebView: WKWebView!
     
     
 

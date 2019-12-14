@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC9117E023A4A6C100FC7D3D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9117DF23A4A6C100FC7D3D /* WebKit.framework */; };
 		AC96871623A0B755007CBFFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC96871523A0B755007CBFFA /* AppDelegate.swift */; };
 		AC96871823A0B755007CBFFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC96871723A0B755007CBFFA /* SceneDelegate.swift */; };
 		AC96871A23A0B755007CBFFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC96871923A0B755007CBFFA /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC9117DF23A4A6C100FC7D3D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		AC96871223A0B755007CBFFA /* Multiple Video Players.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Multiple Video Players.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC96871523A0B755007CBFFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC96871723A0B755007CBFFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC9117E023A4A6C100FC7D3D /* WebKit.framework in Frameworks */,
 				AC96872F23A0BA96007CBFFA /* AVKit.framework in Frameworks */,
 				AC96872D23A0BA92007CBFFA /* AVFoundation.framework in Frameworks */,
 			);
@@ -80,6 +83,7 @@
 		AC96872B23A0BA92007CBFFA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AC9117DF23A4A6C100FC7D3D /* WebKit.framework */,
 				AC96872E23A0BA96007CBFFA /* AVKit.framework */,
 				AC96872C23A0BA92007CBFFA /* AVFoundation.framework */,
 			);
