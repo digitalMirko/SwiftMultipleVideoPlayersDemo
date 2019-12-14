@@ -24,8 +24,6 @@ class ViewController: UIViewController {
     // YouTube Player Demo
     @IBOutlet weak var youTubeWebView: WKWebView!
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,6 +39,11 @@ class ViewController: UIViewController {
         streamingPlayer = AVPlayer(url: streamingVideoURL! as URL)
         streamingPlayerController.player = streamingPlayer
         
+        // YouTube Player Demo
+        // YouTube Video: Manhattan, New York, Cityscape, Metropolitan - Stock Video Footage Collection
+        let youTubeString = "<iframe width=\"1920\" height=\"1080\" src=\"https://www.youtube.com/embed/J6bY8rJ-e6A\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+        
+        youTubeWebView.loadHTMLString(youTubeString, baseURL: nil)
     }
 
     // Local Player Demo
